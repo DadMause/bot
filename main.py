@@ -1,4 +1,3 @@
-import sqlite3
 import random
 import asyncio
 import discord
@@ -46,13 +45,6 @@ bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 @bot.event
 async def on_ready():
     print(f'bot connected to server')
-
-    global base, cur
-    base = sqlite3.connect('botreactions.db')
-    cur = base.cursor()
-    if base:
-        print('DataBase connected...OK')
-
 
 @bot.event
 async def on_member_join(member):
