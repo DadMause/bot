@@ -1,1 +1,6 @@
 discord.py
+sqlite3
+random
+asyncio
+time
+discord.ext
