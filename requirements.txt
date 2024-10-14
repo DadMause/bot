@@ -1,5 +1,0 @@
-discord.py
-random
-asyncio
-time
-discord.ext
